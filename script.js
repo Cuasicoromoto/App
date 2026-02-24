@@ -817,3 +817,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
     capaOscura.addEventListener('click', cerrarTodo);
 });
+
+/* --- LÓGICA DE INSTALACIÓN PWA --- */
+let deferredPrompt;
+const installBanner = document.getElementById('pwa-install-banner');
+const installBtn = document.getElementById('pwa-install-btn');
+const closeBanner = document.getElementById('pwa-close-banner');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    // Evita que el navegador muestre el aviso automático
+    e.preventDefault();
+    // Guarda el evento para poder activarlo después
+    deferredPrompt = e;
+    // Muestra nuestro banner personalizado
+    if (installBanner) {
+        installBanner.style.display = 'flex';
+    }
+});
+
+if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+        if (!deferredPrompt) return;
+        // Muestra el prompt de instalación nativo
+        deferredPrompt.prompt();
+        // Espera a que el usuario responda
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`Usuario eligió: ${outcome}`);
+        // Limpia el evento
+        deferredPrompt = null;
+        // Oculta el banner
+        if (installBanner) installBanner.style.display = 'none';
+    });
+}
+
+if (closeBanner) {
+    closeBanner.addEventListener('click', () => {
+        if (installBanner) installBanner.style.display = 'none';
+    });
+}
+
+window.addEventListener('appinstalled', (event) => {
+    console.log('PWA instalada con éxito');
+    if (installBanner) installBanner.style.display = 'none';
+});
