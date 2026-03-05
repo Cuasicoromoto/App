@@ -1,4 +1,4 @@
-const CACHE_NAME = 'coromoto-cache-v1.04';
+const CACHE_NAME = 'coromoto-cache-v1.05';
 const urlsToCache = [
     './',
     './index.html',
@@ -53,6 +53,7 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+
 
 
 
