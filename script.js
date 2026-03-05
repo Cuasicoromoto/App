@@ -245,69 +245,81 @@ const armarRosario = (misterios) => {
         html += `<br><h3>${i + 1}º Misterio: <br>${m}</h3>`;
         html += COMUNES.padreNuestroBloque;
         html += COMUNES.jaculatoriaMisterio;
-    });
+    }
+    );
     html += COMUNES.salve;
     html += COMUNES.intencionesPapa;
     html += COMUNES.letanias;
     html += COMUNES.cierre;
     return html;
-};
+}
+    ;
 
-oracionesTexto['Misterios Gozosos'] = armarRosario([
-    'La Encarnación del Hijo de Dios.',
-    'La Visitación de María Santísima a Santa Isabel.',
-    'El Nacimiento del Hijo de Dios.',
-    'La Presentación del Señor Jesús en el templo.',
-    'La Pérdida y Hallazgo del Niño Jesús en el templo.'
-]);
+oracionesTexto['Misterios Gozosos'] = armarRosario(['La Encarnación del Hijo de Dios.', 'La Visitación de María Santísima a Santa Isabel.', 'El Nacimiento del Hijo de Dios.', 'La Presentación del Señor Jesús en el templo.', 'La Pérdida y Hallazgo del Niño Jesús en el templo.']);
 
-oracionesTexto['Misterios Luminosos'] = armarRosario([
-    'El Bautismo de Jesús en el Jordán.',
-    'Las Bodas de Caná.',
-    'El anuncio del Reino de Dios invitando a la conversión.',
-    'La Transfiguración.',
-    'La Institución de la Eucaristía.'
-]);
+oracionesTexto['Misterios Luminosos'] = armarRosario(['El Bautismo de Jesús en el Jordán.', 'Las Bodas de Caná.', 'El anuncio del Reino de Dios invitando a la conversión.', 'La Transfiguración.', 'La Institución de la Eucaristía.']);
 
-oracionesTexto['Misterios Dolorosos'] = armarRosario([
-    'La Oración de Jesús en el Huerto.',
-    'La Flagelación de Nuestro Señor Jesús.',
-    'La Coronación de espinas.',
-    'Jesús carga la cruz a cuestas.',
-    'La Crucifixión y Muerte de Jesús.'
-]);
+oracionesTexto['Misterios Dolorosos'] = armarRosario(['La Oración de Jesús en el Huerto.', 'La Flagelación de Nuestro Señor Jesús.', 'La Coronación de espinas.', 'Jesús carga la cruz a cuestas.', 'La Crucifixión y Muerte de Jesús.']);
 
-oracionesTexto['Misterios Gloriosos'] = armarRosario([
-    'La Resurrección del Señor.',
-    'La Ascensión de Jesús al Cielo.',
-    'La Venida del Espíritu Santo.',
-    'La Asunción de María a los Cielos.',
-    'La Coronación de la Santísima Virgen.'
-]);
+oracionesTexto['Misterios Gloriosos'] = armarRosario(['La Resurrección del Señor.', 'La Ascensión de Jesús al Cielo.', 'La Venida del Espíritu Santo.', 'La Asunción de María a los Cielos.', 'La Coronación de la Santísima Virgen.']);
 
-const diasNovenaCoromoto = [
-    { titulo: "Día 1: ", texto: "Dios te Salve María, Reina excelsa y elevada por Dios a incomparable grandeza, por haber sido enriquecida con todos los privilegios del poder del padre, con toda la preferencia del entendimiento del Hijo, y con todas las gracias y dones del Espíritu Santo, te confesamos como Emperatriz del Universo, Reina de los ángeles y de los hombres; en los cielos y en la tierra no hay pura criatura de mayor grandeza y majestad que Tu. Dios te salve, a Ti llamamos los peregrinos de este valle de lágrimas, para que te dignes aplicarnos tus soberanos favores y nos hagas dignos servidores de tu Divino Hijo, Jesucristo Nuestro Señor. Ayúdanos, Señora, para que en las luchas de carne contra el espíritu, salgamos vencedores mediante tu divino y maternal auxilio, y podamos un día entrar triunfante en la Gloria del Cielo. Amén." },
-    { titulo: "Día 2: ", texto: "Dios te Salve, Madre de Misericordia, a quien Dios Padre hizo dispensadora de sus bondades; Dios Hijo Tesorera de sus merecimientos infinitos y Dios Espíritu Santo, Señora de sus dones y gracias, para que lo administrase en beneficio del género humano. Salve, Virgen Madre, que llevaste en tu purísimo seno al Señor de la Creación, al Supremo Ser, de quien los cielos y tierra no son más que débiles obras de sus omnipotentes manos. Salve María, fuente de gracia, que alcanzas el perdón de nuestras culpas y eres nuestra fiel protectora en todas las penas y tentaciones que nos afligen en este valle de amargos dolores. Ruega, Señora, por nosotros. Acepta las humildes plegarias que te dirigimos en nuestras tribulaciones y necesidades, y haznos dignos de cantar un día tus santas alabanzas en medio de los bienaventurados en la Gloria Eterna. Amén." },
-    { titulo: "Día 3: ", texto: "Virgen Santísima, Madre de Dios y Madre nuestra, por cuya intercesión poderosa llegaron al conocimiento de la fe cristiana. Hermosísima Aurora, que brillaste apareciendo en Coromoto y nos dejaste una preciosa prenda de Tu amor, en una milagrosa Imagen, apiádate de nosotros. Alivia nuestros males, poderosísima Abogada nuestra y fortalécenos en las luchas contra los enemigos del alma. <br><br>¡Oh Patrona de Venezuela! Haz que nuestra Nación siga siempre en sus leyes, en sus costumbres y en sus empresas, los sabios y salvadores principios del Santo Evangelio. Protege nuestras instituciones, destierra de nosotros el vicio, la impiedad e indiferencia religiosa; en una palabra, renueva la fe en nuestra amada Patria. Promueve en nuestra sociedad obras verificadoras de salud, adelanto moral y material, para que gozando de los beneficios de una paz tranquila honremos y sirvamos fielmente en la tierra a Tu Divino Hijo Jesucristo, a fin de gozarle eternamente en el Cielo. Amén." },
-    { titulo: "Día 4: ", texto: "Dios te Salve, dulzura inefable, rico panal de miel celestial de gracia, labrado por la omnipotente mano de Dios, para ser paraíso de sus deleites; gusto y alegría de los corazones que aman la tierra y encanto y admiración de los espíritus celestiales. <br><br>¡Virgen bendita! Eres Madre dichosísima en cuyo purísimo ser el dulcísimo Creador derramó la infinita suavidad e inefable dulzura de su divinidad. Con tu bondadoso auxilio suavizas nuestras penas, nos ayudas a reprimir nuestras pasiones, nos fortaleces en toda tentación y derramas sobre nuestras almas el suave rocío de tu dulce consuelo. <br><br>¡Virgen purísima! En ti puso Dios la plenitud de sus gracias y misericordias, para que fueses dulzura y alivio de cuantos clamaren a Ti desde este valle de lágrimas y duelo. <br><br>Ya que eres la alegría de los que te invocan no nos dejes en el llanto y pesar; más, atráenos con tu amabilidad y dulzura maternales para que, apartándonos de los embaucadores gustos y deleites de este mundo, evitemos todo mal y merezcamos entrar un día en el Gozo Eterno. Amén." },
-    { titulo: "Día 5: ", texto: "Dios te Salve, esperanza nuestra; anhelo constante de los Patriarcas, blanco de los ardientes deseos de los Profetas, sagrario seguro donde se refugian los pecadores para alcanzar el perdón de Dios, pues tus ruegos aplacan el justo enojo. <br><br>Eres, Señora, estrella luminosa que guía al cristiano en la noche borrascosa de esta vida; eres el faro luminoso que le indica los escollos donde podría zozobrar su alma, y le señalas el puerto de la segura salvación. <br><br>Iris de paz, que anuncias la misericordia divina, intercede por nosotros, a fin de que, por medio de la recepción del Santo sacramento de la Penitencia y de un verdadero dolor de nuestras culpas alcancemos de Dios el perdón y misericordia, y seamos admitidos en el Reino de la Gloria. Amén." },
-    { titulo: "Día 6: ", texto: "Dios te Salve, Abogada nuestra, que nos amas tanto que sólo cuidas de nuestro bien y nos concedes tus innumerables beneficios y nos favoreces con tus constantes auxilios y santas aspiraciones. <br><br>A tus ruegos y divina intercesión se aplaca la Justicia Divina enojada por nuestra culpa. Por tu mediación, Dios conserva y derrama sus gracias sobre este mundo y nos aplica con eficacia los méritos infinitos de Jesucristo Nuestro Señor y Salvador. <br><br>Derrama, ¡Oh bondadosísima María! En nuestro corazón, tus luces divinas, para que conociendo y agradeciendo tus inmensos beneficios, podamos cantar tus alabanzas por los siglos de los siglos, en la Vida Eterna. Amén." },
-    { titulo: "Día 7: ", texto: "Dios te Salve, Virgen Clemente, toda llena de afabilidad; cuyo mirar tierno y compasivo es consuelo y alivio del alma dolorida. <br><br>Eres, María, estrella benignísima que señalas al náufrago el puerto de la salvación; eres el refugio del pecador, la salud del enfermo, el consuelo del triste, la alegría del desconsolado y la paz y la esperanza del que muere. <br><br>Haznos ¡oh Virgen sacrosanta! Imitadores de tu excelsa clemencia infundiendo en nuestros corazones la divina caridad con nuestro prójimo. <br><br>¡Divina Mediadora nuestra! Acoge propicia nuestras súplicas y despáchalas favorablemente, pues nadie ha solicitado tu protección sin que no haya recibido de tu bondad y clemencia un pronto y eficaz socorro. <br><br>¡Madre clemente!, después del cautiverio de esta vida, muéstranos a Jesús, fruto bendito de tu vientre, y haz que seamos dignos de gozarte en la eternidad. Amén" },
-    { titulo: "Día 8: ", texto: "Dios te Salve ¡oh piadosa!, a quien Dios adornó con las más generosa piedad que te inclinaba a dirigirle todos los pensamientos, deseos y actos de tu vida; te inspiraba un celo ardiente para la gloria de su culto divino, a la par que llenaba tu corazón de tierna compasión para el alivio y consuelo de las almas. Ave, piadosa Madre de las consolaciones. Guárdanos siempre bajo el manto protector de tu misericordia, para que nuestras almas no sean presa de los enemigos de nuestra eterna salvación. <br><br>Ruega por nosotros, Santa Madre de Dios, para que con tu divino auxilio, salgamos victoriosos de toda tentación y vivamos siempre en el servicio y culto del Señor; y que, con el sostén de tu gracia, merezcamos rendirle eternos cultos de amor y alabanza en la Gloria Celestial. Amén." },
-    { titulo: "Día 9: ", texto: "Dios te Salve, ¡oh siempre dulce Virgen María!, cuya virginidad y nombre fue dulcedumbre castísima de Dios, delicia suave para los hombre, gustosa suavidad para los ángeles. <br><br>¡Oh cándida azucena!, zarza eterna a quien Jesús, -fuego divino-, al nacer de Ti, no ofendió tu virginal pureza. <br><br>Virgen sin semejante, que posees a un tiempo la gloriosa aureola de la virginidad y la incomparable dignidad de Madre de Dios, por eso, tu excelso nombre, MARÍA, es símbolo de gracias y purezas. <br><br>Purifícanos, Señora, con tu virtud del asqueroso lodo de toda mancha impura. Presérvanos de la inmunda servidumbre de viles apetitos y colócanos en la apetecible y dulcísima esclavitud de tu sagrado amor, sirviendo a Jesús en toda pureza y castidad, seamos dignos de alcanzar las promesas de su divina gracia en la Gloria Eterna. Amén." }
-];
+const diasNovenaCoromoto = [{
+    titulo: "Día 1: ",
+    texto: "Dios te Salve María, Reina excelsa y elevada por Dios a incomparable grandeza, por haber sido enriquecida con todos los privilegios del poder del padre, con toda la preferencia del entendimiento del Hijo, y con todas las gracias y dones del Espíritu Santo, te confesamos como Emperatriz del Universo, Reina de los ángeles y de los hombres; en los cielos y en la tierra no hay pura criatura de mayor grandeza y majestad que Tu. Dios te salve, a Ti llamamos los peregrinos de este valle de lágrimas, para que te dignes aplicarnos tus soberanos favores y nos hagas dignos servidores de tu Divino Hijo, Jesucristo Nuestro Señor. Ayúdanos, Señora, para que en las luchas de carne contra el espíritu, salgamos vencedores mediante tu divino y maternal auxilio, y podamos un día entrar triunfante en la Gloria del Cielo. Amén."
+}, {
+    titulo: "Día 2: ",
+    texto: "Dios te Salve, Madre de Misericordia, a quien Dios Padre hizo dispensadora de sus bondades; Dios Hijo Tesorera de sus merecimientos infinitos y Dios Espíritu Santo, Señora de sus dones y gracias, para que lo administrase en beneficio del género humano. Salve, Virgen Madre, que llevaste en tu purísimo seno al Señor de la Creación, al Supremo Ser, de quien los cielos y tierra no son más que débiles obras de sus omnipotentes manos. Salve María, fuente de gracia, que alcanzas el perdón de nuestras culpas y eres nuestra fiel protectora en todas las penas y tentaciones que nos afligen en este valle de amargos dolores. Ruega, Señora, por nosotros. Acepta las humildes plegarias que te dirigimos en nuestras tribulaciones y necesidades, y haznos dignos de cantar un día tus santas alabanzas en medio de los bienaventurados en la Gloria Eterna. Amén."
+}, {
+    titulo: "Día 3: ",
+    texto: "Virgen Santísima, Madre de Dios y Madre nuestra, por cuya intercesión poderosa llegaron al conocimiento de la fe cristiana. Hermosísima Aurora, que brillaste apareciendo en Coromoto y nos dejaste una preciosa prenda de Tu amor, en una milagrosa Imagen, apiádate de nosotros. Alivia nuestros males, poderosísima Abogada nuestra y fortalécenos en las luchas contra los enemigos del alma. <br><br>¡Oh Patrona de Venezuela! Haz que nuestra Nación siga siempre en sus leyes, en sus costumbres y en sus empresas, los sabios y salvadores principios del Santo Evangelio. Protege nuestras instituciones, destierra de nosotros el vicio, la impiedad e indiferencia religiosa; en una palabra, renueva la fe en nuestra amada Patria. Promueve en nuestra sociedad obras verificadoras de salud, adelanto moral y material, para que gozando de los beneficios de una paz tranquila honremos y sirvamos fielmente en la tierra a Tu Divino Hijo Jesucristo, a fin de gozarle eternamente en el Cielo. Amén."
+}, {
+    titulo: "Día 4: ",
+    texto: "Dios te Salve, dulzura inefable, rico panal de miel celestial de gracia, labrado por la omnipotente mano de Dios, para ser paraíso de sus deleites; gusto y alegría de los corazones que aman la tierra y encanto y admiración de los espíritus celestiales. <br><br>¡Virgen bendita! Eres Madre dichosísima en cuyo purísimo ser el dulcísimo Creador derramó la infinita suavidad e inefable dulzura de su divinidad. Con tu bondadoso auxilio suavizas nuestras penas, nos ayudas a reprimir nuestras pasiones, nos fortaleces en toda tentación y derramas sobre nuestras almas el suave rocío de tu dulce consuelo. <br><br>¡Virgen purísima! En ti puso Dios la plenitud de sus gracias y misericordias, para que fueses dulzura y alivio de cuantos clamaren a Ti desde este valle de lágrimas y duelo. <br><br>Ya que eres la alegría de los que te invocan no nos dejes en el llanto y pesar; más, atráenos con tu amabilidad y dulzura maternales para que, apartándonos de los embaucadores gustos y deleites de este mundo, evitemos todo mal y merezcamos entrar un día en el Gozo Eterno. Amén."
+}, {
+    titulo: "Día 5: ",
+    texto: "Dios te Salve, esperanza nuestra; anhelo constante de los Patriarcas, blanco de los ardientes deseos de los Profetas, sagrario seguro donde se refugian los pecadores para alcanzar el perdón de Dios, pues tus ruegos aplacan el justo enojo. <br><br>Eres, Señora, estrella luminosa que guía al cristiano en la noche borrascosa de esta vida; eres el faro luminoso que le indica los escollos donde podría zozobrar su alma, y le señalas el puerto de la segura salvación. <br><br>Iris de paz, que anuncias la misericordia divina, intercede por nosotros, a fin de que, por medio de la recepción del Santo sacramento de la Penitencia y de un verdadero dolor de nuestras culpas alcancemos de Dios el perdón y misericordia, y seamos admitidos en el Reino de la Gloria. Amén."
+}, {
+    titulo: "Día 6: ",
+    texto: "Dios te Salve, Abogada nuestra, que nos amas tanto que sólo cuidas de nuestro bien y nos concedes tus innumerables beneficios y nos favoreces con tus constantes auxilios y santas aspiraciones. <br><br>A tus ruegos y divina intercesión se aplaca la Justicia Divina enojada por nuestra culpa. Por tu mediación, Dios conserva y derrama sus gracias sobre este mundo y nos aplica con eficacia los méritos infinitos de Jesucristo Nuestro Señor y Salvador. <br><br>Derrama, ¡Oh bondadosísima María! En nuestro corazón, tus luces divinas, para que conociendo y agradeciendo tus inmensos beneficios, podamos cantar tus alabanzas por los siglos de los siglos, en la Vida Eterna. Amén."
+}, {
+    titulo: "Día 7: ",
+    texto: "Dios te Salve, Virgen Clemente, toda llena de afabilidad; cuyo mirar tierno y compasivo es consuelo y alivio del alma dolorida. <br><br>Eres, María, estrella benignísima que señalas al náufrago el puerto de la salvación; eres el refugio del pecador, la salud del enfermo, el consuelo del triste, la alegría del desconsolado y la paz y la esperanza del que muere. <br><br>Haznos ¡oh Virgen sacrosanta! Imitadores de tu excelsa clemencia infundiendo en nuestros corazones la divina caridad con nuestro prójimo. <br><br>¡Divina Mediadora nuestra! Acoge propicia nuestras súplicas y despáchalas favorablemente, pues nadie ha solicitado tu protección sin que no haya recibido de tu bondad y clemencia un pronto y eficaz socorro. <br><br>¡Madre clemente!, después del cautiverio de esta vida, muéstranos a Jesús, fruto bendito de tu vientre, y haz que seamos dignos de gozarte en la eternidad. Amén"
+}, {
+    titulo: "Día 8: ",
+    texto: "Dios te Salve ¡oh piadosa!, a quien Dios adornó con las más generosa piedad que te inclinaba a dirigirle todos los pensamientos, deseos y actos de tu vida; te inspiraba un celo ardiente para la gloria de su culto divino, a la par que llenaba tu corazón de tierna compasión para el alivio y consuelo de las almas. Ave, piadosa Madre de las consolaciones. Guárdanos siempre bajo el manto protector de tu misericordia, para que nuestras almas no sean presa de los enemigos de nuestra eterna salvación. <br><br>Ruega por nosotros, Santa Madre de Dios, para que con tu divino auxilio, salgamos victoriosos de toda tentación y vivamos siempre en el servicio y culto del Señor; y que, con el sostén de tu gracia, merezcamos rendirle eternos cultos de amor y alabanza en la Gloria Celestial. Amén."
+}, {
+    titulo: "Día 9: ",
+    texto: "Dios te Salve, ¡oh siempre dulce Virgen María!, cuya virginidad y nombre fue dulcedumbre castísima de Dios, delicia suave para los hombre, gustosa suavidad para los ángeles. <br><br>¡Oh cándida azucena!, zarza eterna a quien Jesús, -fuego divino-, al nacer de Ti, no ofendió tu virginal pureza. <br><br>Virgen sin semejante, que posees a un tiempo la gloriosa aureola de la virginidad y la incomparable dignidad de Madre de Dios, por eso, tu excelso nombre, MARÍA, es símbolo de gracias y purezas. <br><br>Purifícanos, Señora, con tu virtud del asqueroso lodo de toda mancha impura. Presérvanos de la inmunda servidumbre de viles apetitos y colócanos en la apetecible y dulcísima esclavitud de tu sagrado amor, sirviendo a Jesús en toda pureza y castidad, seamos dignos de alcanzar las promesas de su divina gracia en la Gloria Eterna. Amén."
+}];
 
-const diasNovenaSanJose = [
-    { titulo: "Día 1: ", texto: "Oh benignísimo Jesús así como consolaste a tu padre amado en las perplejidades e incertidumbres que tuvo, dudando si abandonar a tu Santísima Madre su esposa, así te suplicamos humildemente por intercesión de San José nos concedas mucha prudencia y acierto en todos los casos dudosos y angustias de nuestra vida, para que siempre acertemos con tu santísima voluntad." },
-    { titulo: "Día 2: ", texto: "Oh benignísimo Jesús, así como consolaste a tu padre amado en la pobreza y desamparo de Belén, con tu nacimiento, y con los cánticos de los Angeles y visitas de los pastores, así también te suplicamos humildemente por intercesión de San José, que nos concedas llevar con paciencia nuestra pobreza y desamparo en esta vida, y que alegres nuestro espíritu con tu presencia y tu gracia, y la esperanza de la gloria." },
-    { titulo: "Día 3: ", texto: "Oh benignísimo Jesús, así como consolaste a tu amado padre en el doloroso misterio de la Circuncisión, recibiendo de él el dulce nombre de Jesús, así te suplicamos humildemente, por intercesión de San José, nos concedas pronunciar siempre con amor y respeto tu santísimo nombre, llevarlo en el corazón, honrarlo en la vida, y profesar con obras y palabras que tú fuiste nuestro Salvador y Jesús." },
-    { titulo: "Día 4: ", texto: "Oh benignísimo Jesús, así como consolaste a tu padre amado de la pena que le causó la profecía de Simeón, mostrándole el innumerable coro de los Santos, así te suplicamos humildemente, por intercesión de San José que nos concedas la gracia de ser de aquellos para quienes tu sirves, no de ruina, sino de resurrección, y que correspondamos fielmente a tu gracia para que vayamos a tu gloria." },
-    { titulo: "Día 5: ", texto: "Oh benignísimo Jesús, así como tu amado padre te condujo de Belén a Egipto para librarte del tirano Herodes, así te suplicamos humildemente, por intercesión de San José, que nos libres de los que quieren dañar nuestras almas o nuestros cuerpos, nos des fortaleza y salvación en nuestras persecuciones, y en medio del destierro de esta vida nos protejas hasta que volemos a la patria." },
-    { titulo: "Día 6: ", texto: "Oh benignísimo Jesús así como tu padre amado te sustentó en Nazaret, y en cambio tú le premiaste en tu santísima compañía tantos años, con tu doctrina y tu dulce conversación, así te rogamos humildemente, por intercesión de San José nos concedas el sustento espiritual de tu gracia, y de tu santa comunión, y que vivamos santa y modestamente, como tú en Nazaret." },
-    { titulo: "Día 7: ", texto: "Oh benignísimo Jesús, así como por seguir la voluntad de tu padre celestial permitiste que tu amado padre en la tierra padeciese el vehementísimo dolor de perderte por tres días, así te suplicamos humildemente, por intercesión de San José, que antes queramos perder todas las cosas y disgustar a cualquier amigo, que dejar de hacer tu voluntad; que jamás te perdamos a ti por el pecado mortal, o que si por desgracia te perdiésemos te hallemos mediante una buena confesión." },
-    { titulo: "Día 8: ", texto: "Oh benignísimo Jesús, que en la hora de su muerte consolaste a tu glorioso padre, asistiendo juntamente con tu Madre su esposa a su última agonía, te suplicamos humildemente, por intercesión de San José, que nos concedas una muerte semejante a la suya asistido de tu bondad, de tu Santísima Madre y del mismo glorioso Patriarca protector de los moribundos, pronunciando al morir vuestros santísimos nombres, Jesús, María y José." },
-    { titulo: "Día 9: ", texto: "Oh benignísimo Jesús, así como has elegido por medio de tu Vicario en la tierra a tu amado padre para protector de tu Santa Iglesia Católica, así te suplicamos humildemente por intercesión de San José, nos concedas el que seamos verdaderos y sinceros católicos, que profesemos sin error la fe católica, que vivamos sin miedo una vida digna de la fe que profesamos, y que jamás puedan los enemigos ni aterrarnos con persecuciones, ni con engaños seducirnos y apartamos de la única y verdadera religión que es la Católica." }
-];
+const diasNovenaSanJose = [{
+    titulo: "Día 1: ",
+    texto: "Oh benignísimo Jesús así como consolaste a tu padre amado en las perplejidades e incertidumbres que tuvo, dudando si abandonar a tu Santísima Madre su esposa, así te suplicamos humildemente por intercesión de San José nos concedas mucha prudencia y acierto en todos los casos dudosos y angustias de nuestra vida, para que siempre acertemos con tu santísima voluntad."
+}, {
+    titulo: "Día 2: ",
+    texto: "Oh benignísimo Jesús, así como consolaste a tu padre amado en la pobreza y desamparo de Belén, con tu nacimiento, y con los cánticos de los Angeles y visitas de los pastores, así también te suplicamos humildemente por intercesión de San José, que nos concedas llevar con paciencia nuestra pobreza y desamparo en esta vida, y que alegres nuestro espíritu con tu presencia y tu gracia, y la esperanza de la gloria."
+}, {
+    titulo: "Día 3: ",
+    texto: "Oh benignísimo Jesús, así como consolaste a tu amado padre en el doloroso misterio de la Circuncisión, recibiendo de él el dulce nombre de Jesús, así te suplicamos humildemente, por intercesión de San José, nos concedas pronunciar siempre con amor y respeto tu santísimo nombre, llevarlo en el corazón, honrarlo en la vida, y profesar con obras y palabras que tú fuiste nuestro Salvador y Jesús."
+}, {
+    titulo: "Día 4: ",
+    texto: "Oh benignísimo Jesús, así como consolaste a tu padre amado de la pena que le causó la profecía de Simeón, mostrándole el innumerable coro de los Santos, así te suplicamos humildemente, por intercesión de San José que nos concedas la gracia de ser de aquellos para quienes tu sirves, no de ruina, sino de resurrección, y que correspondamos fielmente a tu gracia para que vayamos a tu gloria."
+}, {
+    titulo: "Día 5: ",
+    texto: "Oh benignísimo Jesús, así como tu amado padre te condujo de Belén a Egipto para librarte del tirano Herodes, así te suplicamos humildemente, por intercesión de San José, que nos libres de los que quieren dañar nuestras almas o nuestros cuerpos, nos des fortaleza y salvación en nuestras persecuciones, y en medio del destierro de esta vida nos protejas hasta que volemos a la patria."
+}, {
+    titulo: "Día 6: ",
+    texto: "Oh benignísimo Jesús así como tu padre amado te sustentó en Nazaret, y en cambio tú le premiaste en tu santísima compañía tantos años, con tu doctrina y tu dulce conversación, así te rogamos humildemente, por intercesión de San José nos concedas el sustento espiritual de tu gracia, y de tu santa comunión, y que vivamos santa y modestamente, como tú en Nazaret."
+}, {
+    titulo: "Día 7: ",
+    texto: "Oh benignísimo Jesús, así como por seguir la voluntad de tu padre celestial permitiste que tu amado padre en la tierra padeciese el vehementísimo dolor de perderte por tres días, así te suplicamos humildemente, por intercesión de San José, que antes queramos perder todas las cosas y disgustar a cualquier amigo, que dejar de hacer tu voluntad; que jamás te perdamos a ti por el pecado mortal, o que si por desgracia te perdiésemos te hallemos mediante una buena confesión."
+}, {
+    titulo: "Día 8: ",
+    texto: "Oh benignísimo Jesús, que en la hora de su muerte consolaste a tu glorioso padre, asistiendo juntamente con tu Madre su esposa a su última agonía, te suplicamos humildemente, por intercesión de San José, que nos concedas una muerte semejante a la suya asistido de tu bondad, de tu Santísima Madre y del mismo glorioso Patriarca protector de los moribundos, pronunciando al morir vuestros santísimos nombres, Jesús, María y José."
+}, {
+    titulo: "Día 9: ",
+    texto: "Oh benignísimo Jesús, así como has elegido por medio de tu Vicario en la tierra a tu amado padre para protector de tu Santa Iglesia Católica, así te suplicamos humildemente por intercesión de San José, nos concedas el que seamos verdaderos y sinceros católicos, que profesemos sin error la fe católica, que vivamos sin miedo una vida digna de la fe que profesamos, y que jamás puedan los enemigos ni aterrarnos con persecuciones, ni con engaños seducirnos y apartamos de la única y verdadera religión que es la Católica."
+}];
 
 const datos = {
     'Avisos Cuasiparroquiales': `
@@ -337,63 +349,87 @@ const datos = {
             </div>
         </div>
     `,
-    'Horarios': [
-        {
-            nombre: 'Capilla Nuestra <br>Señora del Carmen',
-            frecuencia: 'Todos los sábados',
-            actividades: [
-                { nombre: 'Catequesis', hora: '7:00 AM' },
-                { nombre: 'Conversatorio de la Fe', hora: '8:30 AM' },
-                { nombre: 'Celebración de la Palabra', hora: '9:00 AM' }
-            ]
-        },
-        {
-            nombre: 'Capilla Nuestra <br>Señora de la Asunción',
-            frecuencia: 'Todos los sábados',
-            actividades: [
-                { nombre: 'Catequesis', hora: '9:00 AM' },
-                { nombre: 'Conversatorio de la Fe', hora: '10:30 AM' },
-                { nombre: 'Celebración de la Palabra', hora: '11:00 AM' }
-            ]
-        },
-        {
-            nombre: 'Capilla Nuestra <br>Señora de Los Dolores',
-            frecuencia: 'Todos los domingos',
-            actividades: [
-                { nombre: 'Conversatorio de la Fe', hora: '2:00 PM' },
-                { nombre: 'Celebración de la Palabra', hora: '3:00 PM' },
-                { nombre: 'Catequesis', hora: '4:00 PM' }
-            ]
-        },
-        {
-            nombre: 'Capilla Jesús <br>de la Divina Misericordia',
-            frecuencia: 'Todos los sábados',
-            actividades: [
-                { nombre: 'Catequesis', hora: '3:00 PM' },
-                { nombre: 'Conversatorio de la Fe', hora: '4:00 PM' },
-                { nombre: 'Celebración de la Palabra', hora: '4:30 PM' }
-            ]
-        },
-        {
-            nombre: 'Comunidad <br>María Auxiliadora',
-            frecuencia: 'Sábados quincenales',
-            actividades: [
-                { nombre: 'Catequesis', hora: '5:00 PM' },
-                { nombre: 'Conversatorio de la Fe', hora: '6:00 PM' },
-                { nombre: 'Celebración de la Palabra', hora: '6:30 PM' }
-            ]
-        },
-        {
-            nombre: 'Capilla San José',
-            frecuencia: 'Todos los domingos',
-            actividades: [
-                { nombre: 'Catequesis', hora: '10:30 AM' },
-                { nombre: 'Conversatorio de la Fe', hora: '10:30 AM' },
-                { nombre: 'Celebración de la Palabra', hora: '12:00 PM' }
-            ]
-        }].map(c => `
+    'Horarios': [{
+        nombre: 'Capilla Nuestra <br>Señora del Carmen',
+        frecuencia: 'Todos los sábados',
+        actividades: [{
+            nombre: 'Catequesis',
+            hora: '7:00 AM'
+        }, {
+            nombre: 'Conversatorio de la Fe',
+            hora: '8:30 AM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '9:00 AM'
+        }]
+    }, {
+        nombre: 'Capilla Nuestra <br>Señora de la Asunción',
+        frecuencia: 'Todos los sábados',
+        actividades: [{
+            nombre: 'Catequesis',
+            hora: '9:00 AM'
+        }, {
+            nombre: 'Conversatorio de la Fe',
+            hora: '10:30 AM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '11:00 AM'
+        }]
+    }, {
+        nombre: 'Capilla Nuestra <br>Señora de Los Dolores',
+        frecuencia: 'Todos los domingos',
+        actividades: [{
+            nombre: 'Conversatorio de la Fe',
+            hora: '2:00 PM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '3:00 PM'
+        }, {
+            nombre: 'Catequesis',
+            hora: '4:00 PM'
+        }]
+    }, {
+        nombre: 'Capilla Jesús <br>de la Divina Misericordia',
+        frecuencia: 'Todos los sábados',
+        actividades: [{
+            nombre: 'Catequesis',
+            hora: '3:00 PM'
+        }, {
+            nombre: 'Conversatorio de la Fe',
+            hora: '4:00 PM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '4:30 PM'
+        }]
+    }, {
+        nombre: 'Comunidad <br>María Auxiliadora',
+        frecuencia: 'Sábados quincenales',
+        actividades: [{
+            nombre: 'Catequesis',
+            hora: '5:00 PM'
+        }, {
+            nombre: 'Conversatorio de la Fe',
+            hora: '6:00 PM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '6:30 PM'
+        }]
+    }, {
+        nombre: 'Capilla San José',
+        frecuencia: 'Todos los domingos',
+        actividades: [{
+            nombre: 'Catequesis',
+            hora: '10:30 AM'
+        }, {
+            nombre: 'Conversatorio de la Fe',
+            hora: '10:30 AM'
+        }, {
+            nombre: 'Celebración de la Palabra',
+            hora: '12:00 PM'
+        }]
+    }].map(c => `
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">church</span> 
                     ${c.nombre}
@@ -412,16 +448,30 @@ const datos = {
             </div>
         </div>
     `).join(''),
-    'Apostolados': [
-        { nombre: 'Cáritas', descripcion: 'Cáritas es el corazón solidario de nuestra Cuasiparroquia. A través de este apostolado buscamos acompañar a los más necesitados, ofreciendo ayuda material, escucha fraterna y esperanza. Cada gesto de servicio es una manera concreta de hacer presente el amor de Cristo en quienes atraviesan momentos difíciles.' },
-        { nombre: 'Catequesis', descripcion: 'La catequesis es el apostolado evangelizador por excelencia. Aquí, catequistas entregan su tiempo y vocación para transmitir la fe, acompañando a niños, jóvenes y adultos en su iniciación cristiana. Es un espacio donde se siembra la Palabra de Dios, preparando corazones para una vida plena en Cristo.' },
-        { nombre: 'Ministerio de Música', descripcion: 'El Ministerio de Música es el alma sonora de nuestra Cuasiparroquia. A través de este apostolado, músicos y cantores elevan la oración y la alegría de la fe, acompañando las celebraciones litúrgicas con melodías que inspiran y unen a la comunidad en alabanza y adoración.' },
-        { nombre: 'Monaguillos', descripcion: 'Los monaguillos son niños y jóvenes servidores del altar que, con entusiasmo y dedicación, apoyan en las celebraciones litúrgicas. Este apostolado les permite crecer en la fe, aprender el valor del servicio y descubrir la belleza de la liturgia. Su presencia es signo de esperanza y compromiso en el camino cristiano.' },
-        { nombre: 'Grupo Juniors', descripcion: 'El grupo juvenil es un espacio de encuentro, amistad y misión, donde adolescentes y jóvenes comparten su energía, creatividad y alegría para construir comunidad y vivir el Evangelio. Este apostolado les permite crecer juntos, descubrir sus dones y ser protagonistas de la vida parroquial, llevando la fe a cada rincón con entusiasmo.' },
-        { nombre: 'Grupo Másters', descripcion: 'El grupo Máster reúne a adultos comprometidos que, con experiencia y madurez, sostienen la misión de la Cuasiparroquia. Son servidores que acompañan, orientan y fortalecen la vida comunitaria con su testimonio de fe y entrega. Su presencia inspira a las nuevas generaciones.' },
-        { nombre: 'Los Amigos de Jesús', descripcion: 'Los Amigos de Jesús es una comunidad de servidores llamados a vivir aquellas palabras "Ya no los llamo siervos, sino amigos" (Jn 15,15). Es el conjunto de todos los apostolados de la Cuasiparroquia que busca transformar la vida cotidiana en un encuentro constante con el amor de Dios. <br><br>Cada miembro, desde su realidad particular, se convierte en un testigo del Evangelio, llevando la luz de la fe a sus familias, a sus trabajos y a sus comunidades. <br><br>Ser un Amigo de Jesús es responder con un "sí" alegre a la invitación de dar fruto abundante, sabiendo que en esta amistad no hay lugar para el miedo, solo para la esperanza y el servicio.' }].map(a => `
+    'Apostolados': [{
+        nombre: 'Cáritas',
+        descripcion: 'Cáritas es el corazón solidario de nuestra Cuasiparroquia. A través de este apostolado buscamos acompañar a los más necesitados, ofreciendo ayuda material, escucha fraterna y esperanza. Cada gesto de servicio es una manera concreta de hacer presente el amor de Cristo en quienes atraviesan momentos difíciles.'
+    }, {
+        nombre: 'Catequesis',
+        descripcion: 'La catequesis es el apostolado evangelizador por excelencia. Aquí, catequistas entregan su tiempo y vocación para transmitir la fe, acompañando a niños, jóvenes y adultos en su iniciación cristiana. Es un espacio donde se siembra la Palabra de Dios, preparando corazones para una vida plena en Cristo.'
+    }, {
+        nombre: 'Ministerio de Música',
+        descripcion: 'El Ministerio de Música es el alma sonora de nuestra Cuasiparroquia. A través de este apostolado, músicos y cantores elevan la oración y la alegría de la fe, acompañando las celebraciones litúrgicas con melodías que inspiran y unen a la comunidad en alabanza y adoración.'
+    }, {
+        nombre: 'Monaguillos',
+        descripcion: 'Los monaguillos son niños y jóvenes servidores del altar que, con entusiasmo y dedicación, apoyan en las celebraciones litúrgicas. Este apostolado les permite crecer en la fe, aprender el valor del servicio y descubrir la belleza de la liturgia. Su presencia es signo de esperanza y compromiso en el camino cristiano.'
+    }, {
+        nombre: 'Grupo Juniors',
+        descripcion: 'El grupo juvenil es un espacio de encuentro, amistad y misión, donde adolescentes y jóvenes comparten su energía, creatividad y alegría para construir comunidad y vivir el Evangelio. Este apostolado les permite crecer juntos, descubrir sus dones y ser protagonistas de la vida parroquial, llevando la fe a cada rincón con entusiasmo.'
+    }, {
+        nombre: 'Grupo Másters',
+        descripcion: 'El grupo Máster reúne a adultos comprometidos que, con experiencia y madurez, sostienen la misión de la Cuasiparroquia. Son servidores que acompañan, orientan y fortalecen la vida comunitaria con su testimonio de fe y entrega. Su presencia inspira a las nuevas generaciones.'
+    }, {
+        nombre: 'Los Amigos de Jesús',
+        descripcion: 'Los Amigos de Jesús es una comunidad de servidores llamados a vivir aquellas palabras "Ya no los llamo siervos, sino amigos" (Jn 15,15). Es el conjunto de todos los apostolados de la Cuasiparroquia que busca transformar la vida cotidiana en un encuentro constante con el amor de Dios. <br><br>Cada miembro, desde su realidad particular, se convierte en un testigo del Evangelio, llevando la luz de la fe a sus familias, a sus trabajos y a sus comunidades. <br><br>Ser un Amigo de Jesús es responder con un "sí" alegre a la invitación de dar fruto abundante, sabiendo que en esta amistad no hay lugar para el miedo, solo para la esperanza y el servicio.'
+    }].map(a => `
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">groups</span> 
                     ${a.nombre}
@@ -435,27 +485,24 @@ const datos = {
             </div>
         </div>
     `).join(''),
-    'Obras': [
-        {
-            nombre: 'Ancianato',
-            icon: 'elderly',
-            desc: 'Es una casa para el reposo, donde actualmente logramos brindar atención a 15 abuelos. Más que una institución, este espacio busca ser un verdadero hogar cimentado en la caridad y el respeto, donde cada adulto mayor es valorado como un tesoro vivo. Aquí, la caridad no es solo asistencia, es el compromiso de ofrecerles una vida digna. <br><br><b>¿Cómo puedes ayudar?</b> Tú también puedes ser parte de <i>Los Amigos del Abuelo</i> a través de aportes de alimentos, medicinas, artículos de higiene, o brindando tu tiempo en el voluntariado. Cada gesto, por pequeño que sea, nos ayuda a sostener este espacio de caridad y esperanza. <br><br><b>Horarios de visitas:</b>',
-            items: ['Martes a jueves <br>de 2:00 a 5:00 PM.', 'Domingos <br>de 10:00 AM a 4:00 PM.']
-        },
-        {
-            nombre: 'Columbario',
-            icon: 'hexagon',
-            desc: 'El columbario es un lugar sagrado, donde las cenizas de nuestros seres queridos reposan en la paz del Señor y la memoria se convierte en oración constante. Este lugar de esperanza refleja nuestra fe en la resurrección, ofreciendo a las familias un entorno digno y cercano para honrar a quienes ya han partido a la Casa del Padre. <br><br>Si deseas información sobre la adquisición de nichos, puedes contactar con la Cuasiparroquia. <br><br><b>Requisitos:</b>',
-            items: ['Certificado de defunción.', 'Certificado de cremación.', 'Cédula de identidad del difunto.', 'Cédula de identidad y Rif del familiar responsable.']
-        },
-        {
-            nombre: 'Casa de Retiros',
-            icon: 'cottage',
-            desc: 'Un lugar de paz y encuentro en el corazón de nuestra Cuasiparroquia. Nuestra Casa de Retiros es un espacio sagrado diseñado para el recogimiento del alma, donde grupos y comunidades pueden apartarse del ruido del mundo para escuchar la voz de Dios. Es el escenario ideal para retiros, convivencias y jornadas de oración que buscan renovar el espíritu y fortalecer los lazos de fraternidad. <br><br><b>Bondades:</b>:',
-            items: ['Comedor.', 'Espacios abiertos.', 'Salón de reuniones.', 'Habitaciones compartidas.', 'Capacidad hasta para 60 personas.', 'Capilla con la presencia del Santísimo.']
-        }].map(o => `
+    'Obras': [{
+        nombre: 'Ancianato',
+        icon: 'elderly',
+        desc: 'Es una casa para el reposo, donde actualmente logramos brindar atención a 15 abuelos. Más que una institución, este espacio busca ser un verdadero hogar cimentado en la caridad y el respeto, donde cada adulto mayor es valorado como un tesoro vivo. Aquí, la caridad no es solo asistencia, es el compromiso de ofrecerles una vida digna. <br><br><b>¿Cómo puedes ayudar?</b> Tú también puedes ser parte de <i>Los Amigos del Abuelo</i> a través de aportes de alimentos, medicinas, artículos de higiene, o brindando tu tiempo en el voluntariado. Cada gesto, por pequeño que sea, nos ayuda a sostener este espacio de caridad y esperanza. <br><br><b>Horarios de visitas:</b>',
+        items: ['Martes a jueves <br>de 2:00 a 5:00 PM.', 'Domingos <br>de 10:00 AM a 4:00 PM.']
+    }, {
+        nombre: 'Columbario',
+        icon: 'hexagon',
+        desc: 'El columbario es un lugar sagrado, donde las cenizas de nuestros seres queridos reposan en la paz del Señor y la memoria se convierte en oración constante. Este lugar de esperanza refleja nuestra fe en la resurrección, ofreciendo a las familias un entorno digno y cercano para honrar a quienes ya han partido a la Casa del Padre. <br><br>Si deseas información sobre la adquisición de nichos, puedes contactar con la Cuasiparroquia. <br><br><b>Requisitos:</b>',
+        items: ['Certificado de defunción.', 'Certificado de cremación.', 'Cédula de identidad del difunto.', 'Cédula de identidad y Rif del familiar responsable.']
+    }, {
+        nombre: 'Casa de Retiros',
+        icon: 'cottage',
+        desc: 'Un lugar de paz y encuentro en el corazón de nuestra Cuasiparroquia. Nuestra Casa de Retiros es un espacio sagrado diseñado para el recogimiento del alma, donde grupos y comunidades pueden apartarse del ruido del mundo para escuchar la voz de Dios. Es el escenario ideal para retiros, convivencias y jornadas de oración que buscan renovar el espíritu y fortalecer los lazos de fraternidad. <br><br><b>Bondades:</b>:',
+        items: ['Comedor.', 'Espacios abiertos.', 'Salón de reuniones.', 'Habitaciones compartidas.', 'Capacidad hasta para 60 personas.', 'Capilla con la presencia del Santísimo.']
+    }].map(o => `
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">${o.icon}</span> 
                     ${o.nombre}
@@ -474,145 +521,149 @@ const datos = {
     `).join(''),
     'Devocionario': `
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">menu_book</span> Oraciones cotidianas
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Señal de la Cruz">Señal de la Cruz <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Padre nuestro">Padre nuestro <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Avemaría">Avemaría <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Gloria">Gloria <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Yo Confieso">Yo Confieso <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Acto de Contrición">Acto de Contrición <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Credo">Credo <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Salve">Salve <span>Ver</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Señal de la Cruz">Señal de la Cruz <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Padre nuestro">Padre nuestro <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Avemaría">Avemaría <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Gloria">Gloria <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Yo Confieso">Yo Confieso <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Acto de Contrición">Acto de Contrición <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Credo">Credo <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Salve">Salve <span>Ver</span></div>
+                </div>
             </div>
         </div>
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">menu_book</span> Oraciones varias
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Ángel de la guarda">Ángel de la guarda <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Alma de Cristo">Alma de Cristo <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Angelus">Angelus <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Acuérdate">Acuérdate <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Tu pureza">Tu pureza <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A la Sagrada Familia">A la Sagrada Familia <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A San José">A San José <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Benedictus">Benedictus <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Magnificat">Magnificat <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Corazón de Jesús">Corazón de Jesús <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Letanías de San José">Letanías de San José <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A San Miguel Arcángel">A San Miguel Arcángel<span>Ver</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Ángel de la guarda">Ángel de la guarda <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Alma de Cristo">Alma de Cristo <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Angelus">Angelus <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Acuérdate">Acuérdate <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Tu pureza">Tu pureza <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A la Sagrada Familia">A la Sagrada Familia <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A San José">A San José <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Benedictus">Benedictus <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Magnificat">Magnificat <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Corazón de Jesús">Corazón de Jesús <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Letanías de San José">Letanías de San José <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="A San Miguel Arcángel">A San Miguel Arcángel<span>Ver</span></div>
+                </div>
             </div>
         </div>
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">menu_book</span> Santo Rosario
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Gozosos">Misterios Gozosos <span>(lun y sáb)</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Luminosos">Misterios Luminosos <span>(jueves)</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Dolorosos">Misterios Dolorosos <span>(mar y vie)</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Gloriosos">Misterios Gloriosos <span>(mie y dom)</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Gozosos">Misterios Gozosos <span>(lun y sáb)</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Luminosos">Misterios Luminosos <span>(jueves)</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Dolorosos">Misterios Dolorosos <span>(mar y vie)</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Misterios Gloriosos">Misterios Gloriosos <span>(mie y dom)</span></div>
+                </div>
             </div>
         </div>
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">menu_book</span> Novenas
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Novena a la Virgen de Coromoto">A la Virgen de Coromoto <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Novena a San José">Novena a San José <span>Ver</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Novena a la Virgen de Coromoto">A la Virgen de Coromoto <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Novena a San José">Novena a San José <span>Ver</span></div>
+                </div>                    
             </div>
         </div>
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro)">menu_book</span> Coronillas
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Coronilla de San José">Coronilla de San José <span>Ver</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Coronilla de San José">Coronilla de San José <span>Ver</span></div>
+                </div>
             </div>
         </div>
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro)">menu_book</span> Del Catecismo
                 </div>
                 <span class="material-icons-round flecha">chevron_right</span>
             </div>
             <div class="contenido-acordeon contenido-conectado">
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Mandamientos">Mandamientos <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Sacramentos">Sacramentos <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Obras de Misericordia Corporales">Obras de Misericordia Corporales <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Obras de Misericordia Espirituales">Obras de Misericordia Espirituales <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Preparación para la confesión">Preparación para la confesión <span>Ver</span></div>
-                <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Los siete dones del Espíritu Santo">Los siete dones del Espíritu Santo <span>Ver</span></div>
+                <div class="contenido-caja">
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Mandamientos">Mandamientos <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Sacramentos">Sacramentos <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Obras de Misericordia Corporales">Obras de Misericordia Corporales <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Obras de Misericordia Espirituales">Obras de Misericordia Espirituales <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Preparación para la confesión">Preparación para la confesión <span>Ver</span></div>
+                    <div class="enlace-oracion" data-accion="abrir-subpanel" data-valor="Los siete dones del Espíritu Santo">Los siete dones del Espíritu Santo <span>Ver</span></div>
+                </div>
             </div>
         </div>
     `,
-    'Sacramentos': [
-        {
-            nombre: 'Bautismo',
-            icon: 'water_drop',
-            desc: 'El sacramento del Bautismo es el fundamento de toda la vida cristiana, la puerta que abre el acceso a los demás sacramentos. A través del agua y la invocación de la Santísima Trinidad, el fiel es purificado del pecado original, nace a una vida nueva como hijo de Dios y pasa a formar parte viva de la Iglesia, el Cuerpo de Cristo. <br><br><b>Requisitos</b>',
-            items: ['Partida de Nacimiento del niño', 'Un padrino, una madrina o ambos', 'Copia de Cédula de los padrinos', 'Charla pre-bautismal']
-        },
-        {
-            nombre: 'Comunión',
-            icon: 'spa',
-            desc: 'El sacramento de la Comunión, también conocido como la Sagrada Eucaristía, es el centro y la cumbre de la vida cristiana. En este acto, el cristiano recibe el Cuerpo y la Sangre de Jesucristo bajo las especies del pan y el vino. Es un alimento espiritual que nutre el alma, fortalece nuestra unión con Dios y nos hace partícipes del sacrificio de Cristo en la Cruz. <br><br>El próximo período de inscripciones a catequesis será en septiembre de 2026. <br><br><b>Requisitos:</b>',
-            items: ['Representante legal', 'Fe de bautizo actualizada', 'Tercer grado aprobado', 'Asistir a catequesis']
-        },
-        {
-            nombre: 'Confirmación',
-            icon: 'whatshot',
-            desc: 'El sacramento de la Confirmación es el acto mediante el cual el bautizado fortalece su unión con la Iglesia y recibe una efusión especial de los dones del Espíritu Santo. Es la ratificación de la fe iniciada en el Bautismo, que marca al cristiano con un sello espiritual indeleble y lo compromete a ser testigo de Cristo en el mundo a través de sus palabras y acciones. <br><br>El próximo período de inscripciones a catequesis será en septiembre de 2026. <br><br><b>Requisitos:</b>',
-            items: ['Representante legal', 'Fe de bautizo actualizada', '13 años mínimo', 'Un padrino o una madrina', 'Asistir a catequesis']
-        },
-        {
-            nombre: 'Confesión',
-            icon: 'add_box',
-            desc: 'El sacramento de la confesión, también conocido como Reconciliación o Penitencia, es el acto mediante el cual el fiel confiesa sus pecados al sacerdote para recibir el perdón de Dios y la sanación del alma. Es un encuentro de misericordia que restaura la gracia perdida por el pecado y reconcilia al cristiano con la Iglesia. <br><br><b>Pasos a seguir:</b>',
-            items: ['Examen de conciencia', 'Dolor de corazón', 'Propósito de enmienda', 'Decir los pecados al confesor', 'Cumplir la penitencia']
-        },
-        {
-            nombre: 'Unción de los Enfermos',
-            icon: 'opacity',
-            desc: 'El sacramento de la Unción de los enfermos, anteriormente llamado extremaunción, es el acto mediante el cual la Iglesia acude en ayuda del fiel cuya salud se encuentra debilitada por la enfermedad o la vejez. Es un encuentro de consuelo y fortaleza que otorga una gracia especial del Espíritu Santo para sanar el alma, aliviar el sufrimiento corporal si conviene a la salvación, y unir el dolor del enfermo a la Pasión de Cristo. <br><br><b>Requisitos:</b>',
-            items: ['Haber recibido el bautismo', 'Petición del sacramento']
-        },
-        {
-            nombre: 'Orden Sagrado',
-            icon: 'account_circle',
-            desc: 'El sacramento del Orden Sagrado es el acto mediante el cual la misión confiada por Cristo a sus apóstoles sigue siendo ejercida en la Iglesia hasta el fin de los tiempos. A través de la imposición de manos del Obispo y la oración consecratoria, el fiel recibe un sello espiritual que lo configura con Cristo Cabeza, Pastor, Esposo y Siervo, otorgándole la potestad sagrada para administrar los sacramentos, predicar el Evangelio y guiar a la comunidad de cristiana. <br><br><b>Requisitos:</b>',
-            items: ['Discernimiento vocacionnal', 'Formación', 'Promesas de pobreza, castidad y obediencia.']
-        },
-        {
-            nombre: 'Matrimonio',
-            icon: 'people',
-            desc: 'El sacramento del Matrimonio es el acto mediante el cual un hombre y una mujer establecen entre sí una alianza para toda la vida, ordenada por su misma naturaleza al bien de los cónyuges y a la generación y educación de los hijos. En este sacramento, el amor humano es elevado a la dignidad del amor divino, convirtiéndose en un signo visible de la unión entre Cristo y su Iglesia, basado en el consentimiento libre, la fidelidad y la indisolubilidad. <br><br><b>Requisitos:</b>',
-            items: ['Fe de Bautismo actualizada', 'Certificado de Confirmación', 'Curso Prematrimonial', 'Expediente parroquial']
-        },
-    ].map(s => `
+    'Sacramentos': [{
+        nombre: 'Bautismo',
+        icon: 'water_drop',
+        desc: 'El sacramento del Bautismo es el fundamento de toda la vida cristiana, la puerta que abre el acceso a los demás sacramentos. A través del agua y la invocación de la Santísima Trinidad, el fiel es purificado del pecado original, nace a una vida nueva como hijo de Dios y pasa a formar parte viva de la Iglesia, el Cuerpo de Cristo. <br><br><b>Requisitos</b>',
+        items: ['Partida de Nacimiento del niño', 'Un padrino, una madrina o ambos', 'Copia de Cédula de los padrinos', 'Charla pre-bautismal']
+    }, {
+        nombre: 'Comunión',
+        icon: 'spa',
+        desc: 'El sacramento de la Comunión, también conocido como la Sagrada Eucaristía, es el centro y la cumbre de la vida cristiana. En este acto, el cristiano recibe el Cuerpo y la Sangre de Jesucristo bajo las especies del pan y el vino. Es un alimento espiritual que nutre el alma, fortalece nuestra unión con Dios y nos hace partícipes del sacrificio de Cristo en la Cruz. <br><br>El próximo período de inscripciones a catequesis será en septiembre de 2026. <br><br><b>Requisitos:</b>',
+        items: ['Representante legal', 'Fe de bautizo actualizada', 'Tercer grado aprobado', 'Asistir a catequesis']
+    }, {
+        nombre: 'Confirmación',
+        icon: 'whatshot',
+        desc: 'El sacramento de la Confirmación es el acto mediante el cual el bautizado fortalece su unión con la Iglesia y recibe una efusión especial de los dones del Espíritu Santo. Es la ratificación de la fe iniciada en el Bautismo, que marca al cristiano con un sello espiritual indeleble y lo compromete a ser testigo de Cristo en el mundo a través de sus palabras y acciones. <br><br>El próximo período de inscripciones a catequesis será en septiembre de 2026. <br><br><b>Requisitos:</b>',
+        items: ['Representante legal', 'Fe de bautizo actualizada', '13 años mínimo', 'Un padrino o una madrina', 'Asistir a catequesis']
+    }, {
+        nombre: 'Confesión',
+        icon: 'add_box',
+        desc: 'El sacramento de la confesión, también conocido como Reconciliación o Penitencia, es el acto mediante el cual el fiel confiesa sus pecados al sacerdote para recibir el perdón de Dios y la sanación del alma. Es un encuentro de misericordia que restaura la gracia perdida por el pecado y reconcilia al cristiano con la Iglesia. <br><br><b>Pasos a seguir:</b>',
+        items: ['Examen de conciencia', 'Dolor de corazón', 'Propósito de enmienda', 'Decir los pecados al confesor', 'Cumplir la penitencia']
+    }, {
+        nombre: 'Unción de los Enfermos',
+        icon: 'opacity',
+        desc: 'El sacramento de la Unción de los enfermos, anteriormente llamado extremaunción, es el acto mediante el cual la Iglesia acude en ayuda del fiel cuya salud se encuentra debilitada por la enfermedad o la vejez. Es un encuentro de consuelo y fortaleza que otorga una gracia especial del Espíritu Santo para sanar el alma, aliviar el sufrimiento corporal si conviene a la salvación, y unir el dolor del enfermo a la Pasión de Cristo. <br><br><b>Requisitos:</b>',
+        items: ['Haber recibido el bautismo', 'Petición del sacramento']
+    }, {
+        nombre: 'Orden Sagrado',
+        icon: 'account_circle',
+        desc: 'El sacramento del Orden Sagrado es el acto mediante el cual la misión confiada por Cristo a sus apóstoles sigue siendo ejercida en la Iglesia hasta el fin de los tiempos. A través de la imposición de manos del Obispo y la oración consecratoria, el fiel recibe un sello espiritual que lo configura con Cristo Cabeza, Pastor, Esposo y Siervo, otorgándole la potestad sagrada para administrar los sacramentos, predicar el Evangelio y guiar a la comunidad de cristiana. <br><br><b>Requisitos:</b>',
+        items: ['Discernimiento vocacionnal', 'Formación', 'Promesas de pobreza, castidad y obediencia.']
+    }, {
+        nombre: 'Matrimonio',
+        icon: 'people',
+        desc: 'El sacramento del Matrimonio es el acto mediante el cual un hombre y una mujer establecen entre sí una alianza para toda la vida, ordenada por su misma naturaleza al bien de los cónyuges y a la generación y educación de los hijos. En este sacramento, el amor humano es elevado a la dignidad del amor divino, convirtiéndose en un signo visible de la unión entre Cristo y su Iglesia, basado en el consentimiento libre, la fidelidad y la indisolubilidad. <br><br><b>Requisitos:</b>',
+        items: ['Fe de Bautismo actualizada', 'Certificado de Confirmación', 'Curso Prematrimonial', 'Expediente parroquial']
+    },].map(s => `
         <div class="acordeon">
-            <div class="cabecera-acordeon" data-accion="toggle-acordeon" style="border: 2px solid var(--oro-suave); padding: 8px 15px;">
+            <div class="cabecera-acordeon" data-accion="toggle-acordeon">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <span class="material-icons-round" style="color: var(--oro);">${s.icon}</span> 
                     ${s.nombre}
@@ -704,41 +755,34 @@ const contenidoPanel = document.getElementById('contenido-panel');
 const subTitulo = document.getElementById('sub-titulo');
 const subContenido = document.getElementById('sub-contenido');
 
-const oracionesSinAmen = [
-    'Angelus',
-    'A San José',
-    'Misterios Gozosos',
-    'Misterios Luminosos',
-    'Misterios Dolorosos',
-    'Misterios Gloriosos',
-    'Novena a la Virgen de Coromoto',
-    'Mandamientos',
-    'Sacramentos',
-    'Obras de Misericordia Corporales',
-    'Obras de Misericordia Espirituales',
-    'Preparación para la confesión',
-    'Los siete dones del Espíritu Santo'
-];
+const oracionesSinAmen = ['Angelus', 'A San José', 'Misterios Gozosos', 'Misterios Luminosos', 'Misterios Dolorosos', 'Misterios Gloriosos', 'Novena a la Virgen de Coromoto', 'Mandamientos', 'Sacramentos', 'Obras de Misericordia Corporales', 'Obras de Misericordia Espirituales', 'Preparación para la confesión', 'Los siete dones del Espíritu Santo'];
 
 window.cargarDiaNovena = (diaIndex, tipo) => {
     let diasData = [];
-    if (tipo === 'sanjose') diasData = diasNovenaSanJose;
-    if (tipo === 'coromoto') diasData = diasNovenaCoromoto;
+    if (tipo === 'sanjose')
+        diasData = diasNovenaSanJose;
+    if (tipo === 'coromoto')
+        diasData = diasNovenaCoromoto;
 
     const contenidoDiv = document.getElementById('contenido-novena');
-    if (!contenidoDiv || !diasData[diaIndex]) return;
+    if (!contenidoDiv || !diasData[diaIndex])
+        return;
 
     // Resaltar botón activo
     document.querySelectorAll('.btn-dia').forEach((btn, idx) => {
-        if (idx === diaIndex) btn.classList.add('activo');
-        else btn.classList.remove('activo');
-    });
+        if (idx === diaIndex)
+            btn.classList.add('activo');
+        else
+            btn.classList.remove('activo');
+    }
+    );
 
     contenidoDiv.innerHTML = `
         <h4 style="color:var(--vinotinto); margin-bottom:0.5rem;">${diasData[diaIndex].titulo}</h4>
         <p>${diasData[diaIndex].texto}</p>
     `;
-};
+}
+    ;
 
 function abrirPanel(titulo) {
     const contenido = datos[titulo];
@@ -753,7 +797,8 @@ function abrirPanel(titulo) {
 }
 
 function abrirSubPanel(nombre) {
-    if (!nombre) return;
+    if (!nombre)
+        return;
     subTitulo.innerText = nombre;
     let texto = oracionesTexto[nombre] || "<p>Texto de la oración próximamente.</p>";
 
@@ -771,6 +816,7 @@ function abrirSubPanel(nombre) {
             ${mostrarAmen ? '<span class="amen-final">Amén</span>' : ''}
         </div>
     `;
+    subContenido.scrollTop = 0;
     subPanel.classList.add('abierto');
 }
 
@@ -793,30 +839,55 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-abrir-panel]').forEach(el => {
         el.addEventListener('click', () => {
             abrirPanel(el.dataset.abrirPanel);
-        });
-    });
+        }
+        );
+    }
+    );
 
     contenidoPanel.addEventListener('click', (e) => {
         const acordeonHeader = e.target.closest('[data-accion="toggle-acordeon"]');
         if (acordeonHeader) {
-            acordeonHeader.parentElement.classList.toggle('activo');
+            const acordeonActual = acordeonHeader.parentElement;
+            const yaEstabaAbierto = acordeonActual.classList.contains('activo');
+
+            // Cierra todos los acordeones en el panel
+            contenidoPanel.querySelectorAll('.acordeon').forEach(a => {
+                a.classList.remove('activo');
+            }
+            );
+
+            // Si no estaba abierto, ábrelo
+            if (!yaEstabaAbierto) {
+                acordeonActual.classList.add('activo');
+
+                // Desplazar el scroll para que su contenido se vea completo
+                setTimeout(() => {
+                    acordeonActual.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 300);
+            }
         }
 
         const abrirSubBtn = e.target.closest('[data-accion="abrir-subpanel"]');
         if (abrirSubBtn) {
             abrirSubPanel(abrirSubBtn.dataset.valor);
         }
-    });
+    }
+    );
 
     document.querySelectorAll('.boton-cerrar').forEach(btn => {
         btn.addEventListener('click', () => {
-            if (btn.closest('#sub-panel')) cerrarSubPanel();
-            else if (btn.closest('#panel')) cerrarPanel();
-        });
-    });
+            if (btn.closest('#sub-panel'))
+                cerrarSubPanel();
+            else if (btn.closest('#panel'))
+                cerrarPanel();
+        }
+        );
+    }
+    );
 
     capaOscura.addEventListener('click', cerrarTodo);
-});
+}
+);
 
 /* --- LÓGICA DE INSTALACIÓN PWA --- */
 let deferredPrompt;
@@ -833,11 +904,13 @@ window.addEventListener('beforeinstallprompt', (e) => {
     if (installBanner) {
         installBanner.style.display = 'flex';
     }
-});
+}
+);
 
 if (installBtn) {
     installBtn.addEventListener('click', async () => {
-        if (!deferredPrompt) return;
+        if (!deferredPrompt)
+            return;
         // Muestra el prompt de instalación nativo
         deferredPrompt.prompt();
         // Espera a que el usuario responda
@@ -846,17 +919,23 @@ if (installBtn) {
         // Limpia el evento
         deferredPrompt = null;
         // Oculta el banner
-        if (installBanner) installBanner.style.display = 'none';
-    });
+        if (installBanner)
+            installBanner.style.display = 'none';
+    }
+    );
 }
 
 if (closeBanner) {
     closeBanner.addEventListener('click', () => {
-        if (installBanner) installBanner.style.display = 'none';
-    });
+        if (installBanner)
+            installBanner.style.display = 'none';
+    }
+    );
 }
 
 window.addEventListener('appinstalled', (event) => {
     console.log('PWA instalada con éxito');
-    if (installBanner) installBanner.style.display = 'none';
-});
+    if (installBanner)
+        installBanner.style.display = 'none';
+}
+);
