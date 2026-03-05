@@ -426,7 +426,7 @@ body::before {
     color: var(--azul);
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     line-height: 1.1;
     margin-bottom: 2px;
 }
@@ -554,6 +554,10 @@ body::before {
     border-radius: 8px;
     text-transform: uppercase;
     border: 2px solid var(--oro-suave);
+    text-align: right;
+    margin-bottom: -12px;
+    position: relative;
+    z-index: 2;
 }
 
 .aviso-fila {
@@ -612,7 +616,7 @@ body::before {
     padding: 10px 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 800;
+    font-weight: 500;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -628,7 +632,7 @@ body::before {
 }
 
 .contenido-caja p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
     margin: 10px;
@@ -664,7 +668,7 @@ body::before {
 .linea-horaria {
     display: flex;
     justify-content: space-between;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.5rem;
     border-bottom: 1px solid #ddd;
 }
@@ -682,8 +686,8 @@ body::before {
     align-items: center;
     cursor: pointer;
     color: var(--vinotinto);
-    font-weight: 800;
-    font-size: 0.9rem;
+    font-weight: 500;
+    font-size: 1rem;
     background: linear-gradient(var(--blanco), var(--blanco)) padding-box,
         var(--oro-grad) border-box;
     border: 2px solid transparent;
@@ -744,7 +748,7 @@ body::before {
 /* ESTILOS LÍNEA DE TIEMPO */
 .grupo-timeline {
     position: relative;
-    padding: 5px 0;
+    padding: 0 0 5px 0;
 }
 
 .grupo-timeline::before {
