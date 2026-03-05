@@ -46,12 +46,15 @@
     --vinotinto-grad: linear-gradient(135deg, #5D0A14 0%, #800000 100%);
     --oro: #C5A059;
     --oro-suave: #E5D5B5;
-    --beige-crema: #EFE9D9;
+    /*#5D0A14*/
+    --oro-grad: linear-gradient(135deg, #C5A059 0%, #F6E6B4 50%, #C5A059 100%);
+    --beige-crema: #f4f1ea;
     --blanco-puro: #FDFCF9;
     --blanco: #FFFFFF;
+    --azul: #06406d;
     --texto: #2D1A1A;
     --gris-linea: rgba(0, 0, 0, 0.15);
-    --altura-marco: 70px;
+    --altura-marco: 60px;
 }
 
 * {
@@ -60,12 +63,6 @@
     margin: 0;
     padding: 0;
 }
-
-/*
-html {
-    background: #f0f0f0;
-}
-*/
 
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -95,7 +92,7 @@ body::before {
 
     /* PUNTOS RESALTADOS */
     /* Aumentamos el radio a 1.2px y usamos el color Oro directamente */
-    background-image: radial-gradient(var(--oro) 0.75px, transparent 1.2px);
+    background-image: radial-gradient(var(--oro) 0.25px, transparent 1px);
 
     /* Espaciado entre puntos (más pequeño = más densidad) */
     background-size: 6px 6px;
@@ -112,14 +109,12 @@ body::before {
 
 /* SEGURIDAD: Elevamos el contenido para que no quede "detrás" de los puntos */
 .cabecera-minimalista,
-.tablero-principal,
-.palabra-diaria {
+.tablero-principal {
     position: relative;
     z-index: 1;
 }
 
-.cabecera-minimalista,
-.palabra-diaria {
+.cabecera-minimalista {
     height: var(--altura-marco);
     flex: 0 0 auto;
     padding: 0 20px;
@@ -130,7 +125,8 @@ body::before {
 }
 
 .cabecera-minimalista {
-    border-bottom: 1px solid var(--oro);
+    border-bottom: 2px solid transparent;
+    border-image: var(--oro-grad) 1;
     gap: 10px;
 }
 
@@ -192,36 +188,74 @@ body::before {
     font-size: 1.1rem !important;
 }
 
-.palabra-diaria {
-    border-top: 1px solid var(--oro);
+/* --- NUEVA BARRA DE NAVEGACIÓN --- */
+.barra-navegacion {
+    height: var(--altura-marco);
+    background-color: var(--blanco-puro);
+    border-top: 2px solid transparent;
+    border-image: var(--oro-grad) 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    padding-bottom: 5px;
+    flex: 0 0 auto;
+}
+
+.nav-item {
     display: flex;
     flex-direction: column;
-    /* Apila p y span */
-    justify-content: center;
     align-items: center;
-    height: var(--altura-marco);
-    /* Mantiene el alto definido */
+    gap: 4px;
+    color: var(--azul);
+    cursor: pointer;
+    flex: 1;
+    transition: opacity 0.2s;
 }
 
-.palabra-diaria p {
-    /* Aquí cambias la fuente solo para el texto de la cita */
-    font-family: 'Playfair Display', serif;
-    font-size: 0.9rem;
-    font-style: italic;
-    /* Las citas suelen verse bien en cursiva */
-    color: #444;
-    margin-bottom: 2px;
-    /* Espacio mínimo con el span */
+.nav-item:active {
+    opacity: 0.6;
 }
 
-.palabra-diaria span {
-    font-family: 'Segoe UI', sans-serif;
-    /* Fuente más limpia para la referencia */
-    font-size: 0.7rem;
-    color: var(--oro);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.nav-item span:first-child {
+    font-size: 1.6rem;
+}
+
+.nav-item span:last-child {
+    font-size: 0.65rem;
+    /* font-weight: 800; */
+    letter-spacing: 0.5px;
+}
+
+/* El botón central "OREMOS" */
+.item-central {
+    position: relative;
+    top: -12px;
+}
+
+.boton-oremos {
+    width: 70px;
+    height: 70px;
+    background: var(--vinotinto-grad) padding-box,
+        var(--oro-grad) border-box;
+    border: 4px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.boton-oremos span:first-child {
+    font-size: 1.8rem !important;
+}
+
+.boton-oremos span:last-child {
+    font-size: 0.65rem;
+    margin-top: -2px;
 }
 
 
@@ -229,11 +263,10 @@ body::before {
 .tablero-principal {
     flex: 1;
     overflow: hidden;
-    padding: 10px 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    /* Aumentado ligeramente para separar secciones */
+    gap: 20px;
 }
 
 .tarjeta-principal {
@@ -291,20 +324,21 @@ body::before {
 
 /* Estilo base de botón */
 .lista-accion {
-    background: var(--blanco);
+    background: linear-gradient(var(--blanco), var(--blanco)) padding-box,
+        var(--oro-grad) border-box;
+    border: 1.5px solid transparent;
     padding: 8px 12px;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid rgba(197, 160, 89, 0.12);
     cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
+    transition: transform 0.1s, opacity 0.2s;
 }
 
 .lista-accion:active {
-    background: #fdfaf3;
-    transform: scale(0.98);
+    opacity: 0.8;
+    transform: scale(0.96);
 }
 
 /* Modificación para el Devocionario destacado */
@@ -330,7 +364,7 @@ body::before {
 .rejilla-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     flex: 1;
     /* Ocupa el resto de la altura */
     min-height: 0;
@@ -388,10 +422,12 @@ body::before {
 
 .lista-accion-texto b {
     display: block;
-    font-size: 0.85rem;
-    color: var(--vinotinto);
-    /* CORREGIDO: Sintaxis y espaciado reducido */
-    line-height: 1;
+    font-size: 0.75rem;
+    color: var(--azul);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
     margin-bottom: 2px;
 }
 
@@ -433,14 +469,19 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--gris-linea);
+    border-bottom: 2px solid transparent;
+    border-image: var(--oro-grad) 1;
     height: 60px;
+    background: var(--blanco);
+    border-radius: 25px 25px 0 0;
 }
 
 .titulo-panel {
     color: var(--vinotinto);
     font-size: 1.1rem;
     font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .boton-cerrar {
@@ -454,7 +495,37 @@ body::before {
 .contenido-panel {
     overflow-y: auto;
     flex: 1;
-    padding: 10px 20px 30px;
+    padding: 15px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.acordeon {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera-acordeon {
+    height: 65px;
+    flex-shrink: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--vinotinto);
+    font-weight: 700;
+    font-size: 0.95rem;
+    background: linear-gradient(var(--blanco), var(--blanco)) padding-box,
+        var(--oro-grad) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
+}
+
+.acordeon.activo {
+    flex: 0 0 auto;
 }
 
 .capa-oscura {
@@ -560,7 +631,7 @@ body::before {
     font-size: 0.85rem;
     color: #555;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .contenido-caja ul li {
@@ -582,6 +653,7 @@ body::before {
     color: var(--texto);
     font-weight: 500;
     margin-bottom: 4px;
+    margin-left: 1rem;
 }
 
 .lista-bondades li span {
@@ -593,7 +665,7 @@ body::before {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    padding: 8px 0;
+    padding: 0.5rem;
     border-bottom: 1px solid #ddd;
 }
 
@@ -602,17 +674,20 @@ body::before {
 }
 
 .cabecera-acordeon {
-    padding: 12px 15px;
+    height: 65px;
+    flex-shrink: 0;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     color: var(--vinotinto);
-    font-weight: 700;
+    font-weight: 800;
     font-size: 0.9rem;
-    background: var(--beige-crema);
-    border-radius: 8px;
-    margin-top: 8px;
+    background: linear-gradient(var(--blanco), var(--blanco)) padding-box,
+        var(--oro-grad) border-box;
+    border: 2px solid transparent;
+    border-radius: 12px;
 }
 
 .cabecera-acordeon span.flecha {
@@ -625,13 +700,26 @@ body::before {
 }
 
 .contenido-acordeon {
-    display: none;
-    padding: 5px 0 10px;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out, border-color 0.3s, opacity 0.2s;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    /* Evita que los bordes se vean cuando está cerrado */
+    border-color: transparent !important;
 }
 
 .acordeon.activo .contenido-acordeon {
-    display: flex;
+    grid-template-rows: 1fr;
+    opacity: 1;
+    border-color: var(--oro-suave) !important;
+}
+
+/* El hijo directo debe tener min-height: 0 y el padding interno */
+.contenido-acordeon>div {
+    min-height: 0;
+    padding: 10px 0;
 }
 
 .enlace-oracion {
@@ -711,10 +799,11 @@ body::before {
 }
 
 .contenido-conectado {
-    border-left: 3px solid var(--oro-suave);
-    border-bottom: 3px solid var(--oro-suave);
+    border-left: 3px solid;
+    border-bottom: 3px solid;
     border-radius: 0 0 0 10px;
-    margin-left: 25px;
+    margin: 0 25px;
+    /* El color se controla mediante la clase contenido-acordeon para la animación */
 }
 
 .barra-vertical-titulos {
@@ -858,7 +947,8 @@ body::before {
     background: #faf8f2;
     padding: 15px;
     border-radius: 12px;
-    border-left: 3px solid var(--oro);
+    border-left: 1px solid var(--oro);
+    border-right: 1px solid var(--oro);
     min-height: 100px;
 }
 
