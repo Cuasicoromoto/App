@@ -377,7 +377,7 @@ const datos = {
         }]
     }, {
         nombre: 'Capilla Nuestra <br>Señora de Los Dolores',
-        frecuencia: 'Todos los domingos',
+        frecuencia: 'Todos los sábados',
         actividades: [{
             nombre: 'Conversatorio de la Fe',
             hora: '2:00 PM'
@@ -386,20 +386,20 @@ const datos = {
             hora: '3:00 PM'
         }, {
             nombre: 'Catequesis',
-            hora: '4:00 PM'
+            hora: '2:00 PM'
         }]
     }, {
         nombre: 'Capilla Jesús <br>de la Divina Misericordia',
         frecuencia: 'Todos los sábados',
         actividades: [{
             nombre: 'Catequesis',
-            hora: '3:00 PM'
+            hora: '4:00 PM'
         }, {
             nombre: 'Conversatorio de la Fe',
             hora: '4:00 PM'
         }, {
             nombre: 'Celebración de la Palabra',
-            hora: '4:30 PM'
+            hora: '5:00 PM'
         }]
     }, {
         nombre: 'Comunidad <br>María Auxiliadora',
