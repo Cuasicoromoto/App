@@ -668,7 +668,7 @@ body::before {
 .linea-horaria {
     display: flex;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 0.85rem;
     padding: 0.5rem;
     border-bottom: 1px solid #ddd;
 }
