@@ -327,7 +327,7 @@ const datos = {
         <div class="grupo-timeline">
             <div class="aviso-fila">
                 <div class="aviso-fecha"><b>12</b><span>Jue</span></div>
-                <div class="aviso-contenido"><h4>Novena de San José</h4><p><b>Capilla San José - </b>La novena preparatoria de San José es un recorrido de evangelización que realizarán los <i>Misioneros de San José</i> desde el sector Clavelito hasta el sector el Mango, en la comunidad de Guaremal, hasta el día de la procesión a la capilla.</p></div>
+                <div class="aviso-contenido"><h4>Novena de San José</h4><p><b>Capilla San José - </b>La novena preparatoria de San José es un recorrido de evangelización que realizarán los <i>Amigos de San José</i> desde el sector Clavelito hasta el sector el Mango, en la comunidad de Guaremal, hasta el día de la procesión a la capilla.</p></div>
             </div>
             <div class="aviso-fila">
                 <div class="aviso-fecha"><b>19</b><span>Jue</span></div>
