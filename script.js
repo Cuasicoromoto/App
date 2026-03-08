@@ -323,31 +323,63 @@ const diasNovenaSanJose = [{
 
 const datos = {
     'Avisos Cuasiparroquiales': `
-        <div class="encabezado-mes">Febrero 2026</div>
-        <div class="grupo-timeline">
-            <div class="aviso-fila">
-                <div class="aviso-fecha"><b>02</b><span>Lun</span></div>
-                <div class="aviso-contenido"><h4>La Candelaria</h4><p>Bendición de velas y presentación del Niño Jesús.</p></div>
-            </div>
-            <div class="aviso-fila">
-                <div class="aviso-fecha"><b>18</b><span>Mié</span></div>
-                <div class="aviso-contenido"><h4>Miércoles de Ceniza</h4><p>Inicio de la Cuaresma. Misas: 7am, 12pm y 6pm.</p></div>
-            </div>
-        </div>
         <div class="encabezado-mes">Marzo 2026</div>
         <div class="grupo-timeline">
             <div class="aviso-fila">
+                <div class="aviso-fecha"><b>12</b><span>Jue</span></div>
+                <div class="aviso-contenido"><h4>Novena de San José</h4><p><b>Capilla San José - </b>La novena preparatoria de San José es un recorrido de evangelización que realizarán los <i>Misioneros de San José</i> desde el sector Clavelito hasta el sector el Mango, en la comunidad de Guaremal, hasta el día de la procesión a la capilla.</p></div>
+            </div>
+            <div class="aviso-fila">
                 <div class="aviso-fecha"><b>19</b><span>Jue</span></div>
-                <div class="aviso-contenido"><h4>Solemnidad de San José</h4><p>Fiesta patronal en la Capilla San José.</p></div>
+                <div class="aviso-contenido"><h4>Solemnidad de San José</h4><p><b>Capilla San José - </b>Celebración por la solemnidad de San José; patrono de la Iglesia Universal, de la comunidad de Guaremal y de la sede principal de la Cuasiparroquia.</p></div>
+            </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>21</b><span>Sáb</span></div>
+                <div style="display: flex; gap: 1rem; flex-direction: column;">
+                <div class="aviso-contenido"><h4>Procesión de San José</h4><p><b>Capilla San José - </b>Procesión en honor a San José como patrono de la comunidad de Guaremal; desde el sector "El Mango" hasta la Capilla San José, a las 6:00PM.</p></div>
+                <div class="aviso-contenido"><h4>Encuentro vicarial de catequistas</h4><p><b>Zona 1 - </b>Procesión en honor a San José como patrono de la comunidad de Guaremal; desde el sector "El Mango" hasta la Capilla San José, a las 6:00PM.</p></div>
+                </div>
+            </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>22</b><span>Dom</span></div>
+                <div class="aviso-contenido"><h4>Fiesta de San José</h4><p><b>Capilla San José - </b><br><i>• 10:30AM </i> - Actividades recreativas. <br><i>• 12:00PM </i> - Celebración litúrgica.<br><i>• 01:00PM </i> - Sopa.<br><i>• 02:00PM </i> - Bingo.</p></div>
+            </div>
+            
+            <!--
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>28</b><span>Sáb</span></div>
+                <div class="aviso-contenido"><h4>Bendición de Ramos</h4><p><b>Capillas filiales - </b></p></div>
+            </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>29</b><span>Dom</span></div>
+                <div class="aviso-contenido"><h4>Domingo de Ramos</h4><p><b>Capilla San José - </b></p></div>
+            </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>30</b><span>Lun</span></div>
+                <div class="aviso-contenido"><h4>Misa Crismal</h4><p><b>Santa Iglesia Catedral - </b></p></div>
             </div>
         </div>
+        
         <div class="encabezado-mes">Abril 2026</div>
         <div class="grupo-timeline">
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>01</b><span>Mié</span></div>
+                <div class="aviso-contenido"><h4>Procesión del Nazareno</h4><p><b>Capillas filiales - </b></p></div>
+            </div>
             <div class="aviso-fila">
                 <div class="aviso-fecha"><b>05</b><span>Dom</span></div>
                 <div class="aviso-contenido"><h4>Domingo de Resurrección</h4><p>¡Aleluya! Gran fiesta de la Pascua.</p></div>
             </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>04</b><span>Sáb</span></div>
+                <div class="aviso-contenido"><h4>Liturgia Crismal</h4><p><b>Capilla San José - </b></p></div>
+            </div>
+            <div class="aviso-fila">
+                <div class="aviso-fecha"><b>25</b><span>Sáb</span></div>
+                <div class="aviso-contenido"><h4>Ordenación Episcopal</h4><p>Ordenación del presbítero Alberto Castillo</p></div>
+            </div>
         </div>
+        -->
     `,
     'Horarios': [{
         nombre: 'Capilla Nuestra <br>Señora del Carmen',
