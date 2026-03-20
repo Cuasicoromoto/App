@@ -64,13 +64,18 @@
     padding: 0;
 }
 
+html {
+    overscroll-behavior-y: none;
+}
+
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     background-color: var(--beige-crema);
     color: var(--texto);
     min-height: 100dvh;
     width: 100vw;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
+    overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
     display: flex;
     flex-direction: column;
@@ -83,7 +88,6 @@ body {
 body::before {
     content: "";
     position: fixed;
-    /* Mantiene el fondo quieto al hacer scroll */
     top: 0;
     left: 0;
     width: 100%;
