@@ -702,7 +702,7 @@ function renderizarAvisos(avisos) {
     if (grupoAbierto) html += `</div>`;
     return html;
 }
-
+/*
 // Función principal para cargar desde Apps Script
 async function cargarAvisosDesdeAppsScript() {
     // RECUERDA PONER AQUÍ LA URL DE TU SCRIPT
@@ -710,7 +710,7 @@ async function cargarAvisosDesdeAppsScript() {
     /*const webAppUrl = 'https://script.google.com/macros/s/AKfycbw0-_dLWDfhLxXzmkrMBehYj5jL31rNn7CVQ6qsZ_Phvd5ToTzzgEuSUqAPdVwapfC1/exec';*/
 
     // A. Revisamos si hay datos guardados (Ahora guardamos el JSON crudo, no el HTML)
-    const avisosGuardados = localStorage.getItem('avisos_cuasiparroquiales_json');
+/*    const avisosGuardados = localStorage.getItem('avisos_cuasiparroquiales_json');
     if (avisosGuardados) {
         try {
             const avisos = JSON.parse(avisosGuardados);
@@ -742,10 +742,10 @@ async function cargarAvisosDesdeAppsScript() {
         }
     }
 }
-
+*/
 async function cargarAvisosDesdeAppsScript() {
     // RECUERDA PONER AQUÍ LA URL DE TU SCRIPT
-    const webAppUrl = 'https://script.google.com/macros/s/AKfycbyWYf7jJAm794SohA8UBj62wjYDur2I2mgLjrL5-mCEjLcs9qq-gtLLc0n9h0xijlzO/exec?tipo=Avisos';
+    const webAppUrl = 'https://script.google.com/macros/s/AKfycbzhffrPj7V5bJ3IOWD0puAv6i5GE_i__8rc5Q7xdqgXwq8Ww5zQY9KRryAy1LkWf1Aj/exec?tipo=Avisos';
     /*const webAppUrl = 'https://script.google.com/macros/s/AKfycbw0-_dLWDfhLxXzmkrMBehYj5jL31rNn7CVQ6qsZ_Phvd5ToTzzgEuSUqAPdVwapfC1/exec';*/
 
     // A. Revisamos si hay datos guardados (Ahora guardamos el JSON crudo, no el HTML)
@@ -784,7 +784,7 @@ async function cargarAvisosDesdeAppsScript() {
 
 // Esta función sirve para pedir CUALQUIER pestaña de oraciones a Google Sheets
 async function cargarCategoriaOraciones(categoria) {
-    const webAppUrl = `https://script.google.com/macros/s/AKfycbxebCOoaQsZP9ppnb9GGCkZHgs2062fdQtTNoN0I2OLEWLYBKWcrumgM7OjhBBMKRb6/exec?tipo=${categoria}`;
+    const webAppUrl = `https://script.google.com/macros/s/AKfycbzhffrPj7V5bJ3IOWD0puAv6i5GE_i__8rc5Q7xdqgXwq8Ww5zQY9KRryAy1LkWf1Aj/exec?tipo=${categoria}`;
 
     // 1. Cargar desde la memoria local (offline) SOLO si la variable está vacía
     if (Object.keys(oracionesDinamicas).length === 0) {
